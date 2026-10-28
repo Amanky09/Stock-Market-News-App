@@ -1,0 +1,16 @@
+{
+  "name": "stock-market-news-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.2.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

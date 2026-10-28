@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101824">
+  <title>Stock Market News</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><div class="brand"><span class="brand-mark">↗</span><span>Market Signal<span class="brand-dot">.</span></span></div><span class="live"><span></span> LIVE NEWS</span></header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">STOCK MARKET NEWS APP</p>
+      <h1>Find the headlines<br><em>that matter.</em></h1>
+      <p class="intro">A focused view of market news, sorted by headline impact. Follow the source for the full story.</p>
+      <div class="hero-actions"><button id="refresh" type="button">↻ Refresh news</button><span id="updated">Waiting for first update</span></div>
+    </section>
+    <section class="dashboard" aria-label="News dashboard">
+      <div class="summary"><div><span class="metric" id="total">—</span><span class="metric-label">HEADLINES</span></div><div><span class="metric high" id="high-count">—</span><span class="metric-label">HIGH IMPACT</span></div><div><span class="metric" id="source-count">—</span><span class="metric-label">SOURCES</span></div></div>
+      <div class="toolbar"><div class="filters" role="group" aria-label="Filter impact"><button class="active" data-impact="all">All</button><button data-impact="high">High impact</button><button data-impact="medium">Market updates</button></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search headlines" aria-label="Search headlines"></label></div>
+      <div class="settings"><label><input id="alerts" type="checkbox"> Alert me about new high impact headlines</label><span>Alerts work while this page is open and notifications are allowed.</span></div>
+      <p id="status" role="status"></p>
+      <div id="news" class="news-list"></div>
+    </section>
+  </main>
+  <footer>Headline priority uses keywords and is informational only. Verify the original article before making financial decisions. <span>News via Google News RSS.</span></footer>
+</body>
+</html>
